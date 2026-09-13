@@ -6,6 +6,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Console",
     icon: "square-terminal",
     urlKey: "console",
+    appOrder: ["counter", "tip-calculator", "network-status"],
     pages: [
       {
         id: "dashboard",
@@ -26,6 +27,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Tip Calculator",
     icon: "hand-coins",
     urlKey: "tip-calculator",
+    appOrder: ["console", "counter", "network-status"],
     pages: [
       { id: "claims", label: "Claims", path: "/claims", icon: "landmark" },
       { id: "tips", label: "Tips", path: "/tips", icon: "hand-coins" },
@@ -56,6 +58,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Counter",
     icon: "gauge",
     urlKey: "counter",
+    appOrder: ["console", "tip-calculator", "network-status"],
     pages: [
       { id: "counter", label: "Counter", path: "/", icon: "gauge" },
       {
@@ -72,6 +75,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Network Status",
     icon: "network",
     urlKey: "network-status",
+    appOrder: ["console", "counter", "tip-calculator"],
     pages: [
       {
         id: "network-status",
