@@ -6,7 +6,20 @@ export const appDefinitions: AppDefinition[] = [
     label: "Console",
     icon: "square-terminal",
     urlKey: "console",
-    pages: [],
+    pages: [
+      {
+        id: "dashboard",
+        label: "Dashboard",
+        path: "/",
+        icon: "layout-dashboard",
+      },
+      {
+        id: "schedules",
+        label: "Schedules",
+        path: "/schedules",
+        icon: "calendar-days",
+      },
+    ],
   },
   {
     id: "tip-calculator",
