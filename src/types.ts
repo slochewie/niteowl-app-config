@@ -7,9 +7,11 @@ export type NiteOwlAppId =
 export type NiteOwlIconId =
   | "book-open"
   | "building-2"
+  | "calendar-days"
   | "gauge"
   | "hand-coins"
   | "landmark"
+  | "layout-dashboard"
   | "network"
   | "scale"
   | "scroll-text"
