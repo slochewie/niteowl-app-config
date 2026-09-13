@@ -65,7 +65,9 @@ export function buildNavigation({
       active: currentPath === page.path,
     }));
 
-  const appItems = appDefinitions
+  const orderedApps = activeApp.appOrder?.map((id) => appDefinitionsById[id]) ?? appDefinitions;
+
+  const appItems = orderedApps
     .filter((app) => app.id !== currentApp)
     .filter((app) => isAllowed(app, canAccess))
     .map((app) => ({
