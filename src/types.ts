@@ -39,5 +39,6 @@ export type AppDefinition = {
   icon: NiteOwlIconId;
   urlKey: NiteOwlAppId;
   pages: AppPageDefinition[];
+  appOrder?: NiteOwlAppId[];
   access?: AccessRequirement;
 };
