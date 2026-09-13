@@ -43,7 +43,16 @@ export const appDefinitions: AppDefinition[] = [
     label: "Counter",
     icon: "gauge",
     urlKey: "counter",
-    pages: [],
+    pages: [
+      { id: "counter", label: "Counter", path: "/", icon: "gauge" },
+      {
+        id: "assignments",
+        label: "Assignments",
+        path: "/assignments",
+        icon: "users",
+        access: { key: "counter:manage-assignments" },
+      },
+    ],
   },
   {
     id: "network-status",
