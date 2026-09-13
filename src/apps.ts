@@ -59,7 +59,14 @@ export const appDefinitions: AppDefinition[] = [
     label: "Network Status",
     icon: "network",
     urlKey: "network-status",
-    pages: [],
+    pages: [
+      {
+        id: "network-status",
+        label: "Network Status",
+        path: "/",
+        icon: "network",
+      },
+    ],
   },
 ];
 
