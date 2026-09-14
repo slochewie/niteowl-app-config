@@ -12,6 +12,12 @@ export function getDeploymentForHostname(hostname: string): NiteOwlDeployment {
     : "niteowl";
 }
 
+export function getDeploymentBrand(hostname: string) {
+  return getDeploymentForHostname(hostname) === "mccarthys"
+    ? "McCarthysIrishPub.com"
+    : "NiteOwl.dev";
+}
+
 export function getDefaultAppUrls(hostname: string): AppUrlMap {
   if (getDeploymentForHostname(hostname) === "mccarthys") {
     return {
