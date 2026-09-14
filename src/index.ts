@@ -1,4 +1,6 @@
 export { appDefinitions, appDefinitionsById } from "./apps.ts";
+export { getDefaultAppUrls, getDeploymentForHostname } from "./deployment.ts";
+export type { NiteOwlDeployment } from "./deployment.ts";
 export { buildNavigation } from "./navigation.ts";
 export type {
   AppUrlMap,
