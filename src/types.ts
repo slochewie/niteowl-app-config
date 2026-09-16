@@ -13,6 +13,7 @@ export type NiteOwlIconId =
   | "landmark"
   | "layout-dashboard"
   | "network"
+  | "panels-top-left"
   | "scale"
   | "scroll-text"
   | "seven-shifts"
