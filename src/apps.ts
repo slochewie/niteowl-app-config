@@ -8,18 +8,8 @@ export const appDefinitions: AppDefinition[] = [
     urlKey: "console",
     appOrder: ["counter", "tip-calculator", "network-status"],
     pages: [
-      {
-        id: "dashboard",
-        label: "Dashboard",
-        path: "/",
-        icon: "layout-dashboard",
-      },
-      {
-        id: "schedules",
-        label: "Schedules",
-        path: "/schedules",
-        icon: "calendar-days",
-      },
+      { id: "dashboard", label: "Dashboard", path: "/", icon: "layout-dashboard" },
+      { id: "schedules", label: "Schedules", path: "/schedules", icon: "calendar-days" },
     ],
   },
   {
@@ -31,26 +21,10 @@ export const appDefinitions: AppDefinition[] = [
     pages: [
       { id: "claims", label: "Claims", path: "/claims", icon: "landmark" },
       { id: "tips", label: "Tips", path: "/tips", icon: "hand-coins" },
-      {
-        id: "weight-presets",
-        label: "Weight Presets",
-        path: "/weight-presets",
-        icon: "scale",
-      },
-      {
-        id: "seven-shifts",
-        label: "7Shifts Schedule",
-        path: "/seven-shifts",
-        icon: "seven-shifts",
-        access: { key: "tip-calculator:seven-shifts-navigation" },
-      },
+      { id: "weight-presets", label: "Weight Presets", path: "/weight-presets", icon: "scale" },
+      { id: "seven-shifts", label: "7Shifts Schedule", path: "/seven-shifts", icon: "seven-shifts", access: { key: "tip-calculator:seven-shifts-navigation" } },
       { id: "reports", label: "Reports", path: "/reports", icon: "scroll-text" },
-      {
-        id: "assignments",
-        label: "Assignments",
-        path: "/assignments",
-        icon: "users",
-      },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
     ],
   },
   {
@@ -61,13 +35,7 @@ export const appDefinitions: AppDefinition[] = [
     appOrder: ["console", "tip-calculator", "network-status"],
     pages: [
       { id: "counter", label: "Counter", path: "/", icon: "gauge" },
-      {
-        id: "assignments",
-        label: "Assignments",
-        path: "/assignments",
-        icon: "users",
-        access: { key: "counter:manage-assignments" },
-      },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "counter:manage-assignments" } },
     ],
   },
   {
@@ -77,12 +45,9 @@ export const appDefinitions: AppDefinition[] = [
     urlKey: "network-status",
     appOrder: ["console", "counter", "tip-calculator"],
     pages: [
-      {
-        id: "network-status",
-        label: "Network Status",
-        path: "/",
-        icon: "network",
-      },
+      { id: "network-status", label: "Network Status", path: "/", icon: "network" },
+      { id: "zones", label: "Zones", path: "/zones", icon: "panels-top-left" },
+      { id: "toast-readiness", label: "Toast Readiness", path: "/toast-readiness", icon: "shield-check" },
     ],
   },
 ];
