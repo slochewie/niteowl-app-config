@@ -49,6 +49,7 @@ export const appDefinitions: AppDefinition[] = [
       { id: "devices", label: "Devices", path: "/devices", icon: "cable" },
       { id: "zones", label: "Zones", path: "/zones", icon: "panels-top-left" },
       { id: "toast-readiness", label: "Toast Readiness", path: "/toast-readiness", icon: "shield-check" },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
     ],
   },
 ];
