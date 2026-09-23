@@ -2,7 +2,8 @@ export type NiteOwlAppId =
   | "console"
   | "tip-calculator"
   | "counter"
-  | "network-status";
+  | "network-status"
+  | "inventory";
 
 export type NiteOwlIconId =
   | "book-open"
