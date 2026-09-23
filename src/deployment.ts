@@ -25,6 +25,7 @@ export function getDefaultAppUrls(hostname: string): AppUrlMap {
       "tip-calculator": "https://tip-calculator.mccarthysirishpub.com",
       counter: "https://counter.mccarthysirishpub.com",
       "network-status": "https://unifi.mccarthysirishpub.com",
+      inventory: "https://inventory.mccarthysirishpub.com",
     };
   }
 
@@ -33,5 +34,6 @@ export function getDefaultAppUrls(hostname: string): AppUrlMap {
     "tip-calculator": "https://tip-calculator.niteowl.dev",
     counter: "https://counter.niteowl.dev",
     "network-status": "https://unifi.niteowl.dev",
+    inventory: "https://inventory.niteowl.dev",
   };
 }
