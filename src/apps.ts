@@ -60,6 +60,7 @@ export const appDefinitions: AppDefinition[] = [
     appOrder: ["console", "counter", "tip-calculator", "network-status"],
     pages: [
       { id: "menu-items", label: "Menu Items", path: "/", icon: "book-open" },
+      { id: "toast-workbook", label: "Toast Workbook", path: "/toast-workbook", icon: "book-open" },
     ],
   },
 ];
