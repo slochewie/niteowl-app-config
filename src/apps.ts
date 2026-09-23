@@ -6,7 +6,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Console",
     icon: "square-terminal",
     urlKey: "console",
-    appOrder: ["counter", "tip-calculator", "network-status"],
+    appOrder: ["counter", "tip-calculator", "network-status", "inventory"],
     pages: [
       { id: "dashboard", label: "Dashboard", path: "/", icon: "layout-dashboard" },
       { id: "schedules", label: "Schedules", path: "/schedules", icon: "calendar-days" },
@@ -17,7 +17,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Tip Calculator",
     icon: "hand-coins",
     urlKey: "tip-calculator",
-    appOrder: ["console", "counter", "network-status"],
+    appOrder: ["console", "counter", "network-status", "inventory"],
     pages: [
       { id: "claims", label: "Claims", path: "/claims", icon: "landmark" },
       { id: "tips", label: "Tips", path: "/tips", icon: "hand-coins" },
@@ -32,7 +32,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Counter",
     icon: "gauge",
     urlKey: "counter",
-    appOrder: ["console", "tip-calculator", "network-status"],
+    appOrder: ["console", "tip-calculator", "network-status", "inventory"],
     pages: [
       { id: "counter", label: "Counter", path: "/", icon: "gauge" },
       { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "counter:manage-assignments" } },
@@ -43,13 +43,23 @@ export const appDefinitions: AppDefinition[] = [
     label: "Network Status",
     icon: "network",
     urlKey: "network-status",
-    appOrder: ["console", "counter", "tip-calculator"],
+    appOrder: ["console", "counter", "tip-calculator", "inventory"],
     pages: [
       { id: "network-status", label: "Network Status", path: "/", icon: "network" },
       { id: "devices", label: "Devices", path: "/devices", icon: "cable" },
       { id: "zones", label: "Zones", path: "/zones", icon: "panels-top-left" },
       { id: "toast-readiness", label: "Toast Readiness", path: "/toast-readiness", icon: "shield-check" },
       { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "network-status:manage-assignments" } },
+    ],
+  },
+  {
+    id: "inventory",
+    label: "Inventory",
+    icon: "book-open",
+    urlKey: "inventory",
+    appOrder: ["console", "counter", "tip-calculator", "network-status"],
+    pages: [
+      { id: "menu-items", label: "Menu Items", path: "/", icon: "book-open" },
     ],
   },
 ];
