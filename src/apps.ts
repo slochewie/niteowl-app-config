@@ -63,6 +63,7 @@ export const appDefinitions: AppDefinition[] = [
       { id: "imports", label: "Import History", path: "/imports", icon: "history" },
       { id: "toast-workbook", label: "Toast Workbook", path: "/toast-workbook", icon: "book-open" },
       { id: "toast-template-import", label: "Template Import", path: "/toast-template-import", icon: "book-open" },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
     ],
   },
 ];
