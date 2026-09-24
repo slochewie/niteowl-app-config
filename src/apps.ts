@@ -59,7 +59,8 @@ export const appDefinitions: AppDefinition[] = [
     urlKey: "inventory",
     appOrder: ["console", "counter", "tip-calculator", "network-status"],
     pages: [
-      { id: "menu-items", label: "Menu Items", path: "/", icon: "book-open" },
+      { id: "catalog", label: "Catalog", path: "/", icon: "book-open" },
+      { id: "import-review", label: "Import & Review", path: "/import-review", icon: "history", access: { key: "inventory:import-export" } },
       { id: "imports", label: "Import History", path: "/imports", icon: "history" },
       { id: "reconcile", label: "Reconcile", path: "/reconcile", icon: "book-open", access: { key: "inventory:edit" } },
       { id: "toast-workbook", label: "Toast Workbook", path: "/toast-workbook", icon: "book-open", access: { key: "inventory:import-export" } },
