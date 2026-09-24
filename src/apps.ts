@@ -61,6 +61,7 @@ export const appDefinitions: AppDefinition[] = [
     pages: [
       { id: "menu-items", label: "Menu Items", path: "/", icon: "book-open" },
       { id: "imports", label: "Import History", path: "/imports", icon: "history" },
+      { id: "reconcile", label: "Reconcile", path: "/reconcile", icon: "book-open", access: { key: "inventory:edit" } },
       { id: "toast-workbook", label: "Toast Workbook", path: "/toast-workbook", icon: "book-open", access: { key: "inventory:import-export" } },
       { id: "toast-template-import", label: "Template Import", path: "/toast-template-import", icon: "book-open", access: { key: "inventory:import-export" } },
       { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
