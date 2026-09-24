@@ -24,7 +24,7 @@ export const appDefinitions: AppDefinition[] = [
       { id: "weight-presets", label: "Weight Presets", path: "/weight-presets", icon: "scale" },
       { id: "seven-shifts", label: "7Shifts Schedule", path: "/seven-shifts", icon: "seven-shifts", access: { key: "tip-calculator:seven-shifts-navigation" } },
       { id: "reports", label: "Reports", path: "/reports", icon: "scroll-text" },
-      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "inventory:manage-assignments" } },
     ],
   },
   {
