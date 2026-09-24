@@ -24,7 +24,7 @@ export const appDefinitions: AppDefinition[] = [
       { id: "weight-presets", label: "Weight Presets", path: "/weight-presets", icon: "scale" },
       { id: "seven-shifts", label: "7Shifts Schedule", path: "/seven-shifts", icon: "seven-shifts", access: { key: "tip-calculator:seven-shifts-navigation" } },
       { id: "reports", label: "Reports", path: "/reports", icon: "scroll-text" },
-      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "inventory:manage-assignments" } },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
     ],
   },
   {
@@ -64,7 +64,7 @@ export const appDefinitions: AppDefinition[] = [
       { id: "reconcile", label: "Reconcile", path: "/reconcile", icon: "book-open", access: { key: "inventory:edit" } },
       { id: "toast-workbook", label: "Toast Workbook", path: "/toast-workbook", icon: "book-open", access: { key: "inventory:import-export" } },
       { id: "toast-template-import", label: "Template Import", path: "/toast-template-import", icon: "book-open", access: { key: "inventory:import-export" } },
-      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users" },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "inventory:manage-assignments" } },
     ],
   },
 ];
