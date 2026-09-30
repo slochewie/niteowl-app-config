@@ -65,7 +65,6 @@ export const appDefinitions: AppDefinition[] = [
       { id: "organization-settings", label: "Organization Settings", path: "/organization-settings", icon: "building-2", access: { key: "inventory:edit" } },
       { id: "import-review", label: "Import & Review", path: "/import-review", icon: "history" },
       { id: "toast-workbook", label: "Export to Toast", path: "/toast-workbook", icon: "book-open", access: { key: "inventory:import-export" } },
-      { id: "master-names", label: "Master Names", path: "/master-names", icon: "book-open", access: { key: "inventory:manage-master-catalog" } },
       { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "inventory:manage-assignments" } },
     ],
   },
