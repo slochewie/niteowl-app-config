@@ -61,7 +61,7 @@ export const appDefinitions: AppDefinition[] = [
     pages: [
       { id: "catalog", label: "Catalog", path: "/", icon: "book-open" },
       { id: "manual-item", label: "Add Item", path: "/manual-item", icon: "book-open", access: { key: "inventory:edit" } },
-      { id: "cocktails", label: "Cocktails", path: "/cocktails", icon: "martini", access: { key: "inventory:edit" } },
+      { id: "cocktails", label: "Cocktails", path: "/cocktails", icon: "book-open", access: { key: "inventory:edit" } },
       { id: "menu-categories", label: "Menu Categories", path: "/menu-categories", icon: "book-open", access: { key: "inventory:edit" } },
       { id: "organization-settings", label: "Organization Settings", path: "/organization-settings", icon: "building-2", access: { key: "inventory:edit" } },
       { id: "import-review", label: "Import & Review", path: "/import-review", icon: "history" },
