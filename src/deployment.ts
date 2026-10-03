@@ -26,6 +26,7 @@ export function getDefaultAppUrls(hostname: string): AppUrlMap {
       counter: "https://counter.mccarthysirishpub.com",
       "network-status": "https://unifi.mccarthysirishpub.com",
       inventory: "https://inventory.mccarthysirishpub.com",
+      "smart-devices": "https://smartdevices.mccarthysirishpub.com",
     };
   }
 
@@ -35,5 +36,6 @@ export function getDefaultAppUrls(hostname: string): AppUrlMap {
     counter: "https://counter.niteowl.dev",
     "network-status": "https://unifi.niteowl.dev",
     inventory: "https://inventory.niteowl.dev",
+    "smart-devices": "https://smartdevices.niteowl.dev",
   };
 }
