@@ -6,7 +6,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Console",
     icon: "square-terminal",
     urlKey: "console",
-    appOrder: ["counter", "tip-calculator", "network-status", "inventory"],
+    appOrder: ["counter", "tip-calculator", "network-status", "inventory", "smart-devices"],
     pages: [
       { id: "dashboard", label: "Dashboard", path: "/", icon: "layout-dashboard" },
       { id: "schedules", label: "Schedules", path: "/schedules", icon: "calendar-days" },
@@ -17,7 +17,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Tip Calculator",
     icon: "hand-coins",
     urlKey: "tip-calculator",
-    appOrder: ["console", "counter", "network-status", "inventory"],
+    appOrder: ["console", "counter", "network-status", "inventory", "smart-devices"],
     pages: [
       { id: "claims", label: "Claims", path: "/claims", icon: "landmark" },
       { id: "tips", label: "Tips", path: "/tips", icon: "hand-coins" },
@@ -32,7 +32,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Counter",
     icon: "gauge",
     urlKey: "counter",
-    appOrder: ["console", "tip-calculator", "network-status", "inventory"],
+    appOrder: ["console", "tip-calculator", "network-status", "inventory", "smart-devices"],
     pages: [
       { id: "counter", label: "Counter", path: "/", icon: "gauge" },
       { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "counter:manage-assignments" } },
@@ -43,7 +43,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Network Status",
     icon: "network",
     urlKey: "network-status",
-    appOrder: ["console", "counter", "tip-calculator", "inventory"],
+    appOrder: ["console", "counter", "tip-calculator", "inventory", "smart-devices"],
     pages: [
       { id: "network-status", label: "Network Status", path: "/", icon: "network" },
       { id: "devices", label: "Devices", path: "/devices", icon: "cable" },
@@ -57,7 +57,7 @@ export const appDefinitions: AppDefinition[] = [
     label: "Inventory",
     icon: "book-open",
     urlKey: "inventory",
-    appOrder: ["console", "counter", "tip-calculator", "network-status"],
+    appOrder: ["console", "counter", "tip-calculator", "network-status", "smart-devices"],
     pages: [
       { id: "catalog", label: "Catalog", path: "/", icon: "book-open" },
       { id: "manual-item", label: "Add Item", path: "/manual-item", icon: "book-open", access: { key: "inventory:edit" } },
@@ -68,6 +68,21 @@ export const appDefinitions: AppDefinition[] = [
       { id: "toast-workbook", label: "Export to Toast", path: "/toast-workbook", icon: "book-open", access: { key: "inventory:import-export" } },
       { id: "master-names", label: "Master Names", path: "/master-names", icon: "book-open", access: { key: "inventory:manage-master-catalog" } },
       { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "inventory:manage-assignments" } },
+    ],
+  },
+  {
+    id: "smart-devices",
+    label: "Smart Devices",
+    icon: "plug-zap",
+    urlKey: "smart-devices",
+    appOrder: ["console", "counter", "tip-calculator", "network-status", "inventory"],
+    pages: [
+      { id: "dashboard", label: "Dashboard", path: "/", icon: "layout-dashboard" },
+      { id: "devices", label: "Devices", path: "/devices", icon: "plug-zap" },
+      { id: "groups", label: "Groups", path: "/groups", icon: "panels-top-left" },
+      { id: "scenes", label: "Scenes", path: "/scenes", icon: "shield-check" },
+      { id: "automations", label: "Automations", path: "/automations", icon: "calendar-days" },
+      { id: "assignments", label: "Assignments", path: "/assignments", icon: "users", access: { key: "smart-devices:manage-assignments" } },
     ],
   },
 ];
