@@ -3,7 +3,8 @@ export type NiteOwlAppId =
   | "tip-calculator"
   | "counter"
   | "network-status"
-  | "inventory";
+  | "inventory"
+  | "smart-devices";
 
 export type NiteOwlIconId =
   | "book-open"
@@ -12,10 +13,12 @@ export type NiteOwlIconId =
   | "calendar-days"
   | "gauge"
   | "hand-coins"
+  | "history"
   | "landmark"
   | "layout-dashboard"
   | "network"
   | "panels-top-left"
+  | "plug-zap"
   | "scale"
   | "scroll-text"
   | "seven-shifts"
