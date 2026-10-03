@@ -12,5 +12,7 @@ A consuming application resolves its authenticated user's capabilities, gets the
 - Tip Calculator
 - Counter
 - Network Status
+- Inventory
+- Smart Devices
 
 Tip Calculator is the first migration target for the shared navigation/app-shell work.
